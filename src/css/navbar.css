@@ -1,0 +1,58 @@
+.lpage-nav{
+    z-index: 100;
+    height:1.8rem;
+    width:100vw;
+    font-family: monospace;
+    position:fixed;
+    top: 0;
+    font-size: 0.5rem;
+    background-color: #0a192f;
+    color: white;
+}
+
+.lpage-a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+#lpage-home{
+    display: inline;
+    margin-left: 6vw;
+    line-height: 1.8rem;
+    cursor: pointer;
+}
+
+.lpage-navbarRight{
+    display: inline;
+    float: right;
+    margin-right: 6vw;
+}
+
+#lpage-about,#lpage-ht{
+    display: inline;
+    margin-left: 3vw;
+    line-height: 1.8rem;
+    cursor: pointer;
+}
+
+#lpage-home:hover, #lpage-about:hover,#lpage-ht:hover{
+    color:#2d386e;
+}
+
+@media  only screen and (max-width:768px) {
+
+    .lpage-nav{
+        height: 2.5rem;
+        line-height: 2.5rem;
+        font-size:0.7rem;
+    }
+
+    #lpage-home{
+        margin-left:6vw;
+        line-height: 2.5rem;
+    }#lpage-about,#lpage-ht{
+        margin-right:6vw;
+        line-height: 2.5rem;
+    }
+}
