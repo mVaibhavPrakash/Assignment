@@ -43,16 +43,16 @@
 @media  only screen and (max-width:768px) {
 
     .lpage-nav{
-        height: 2.5rem;
-        line-height: 2.5rem;
-        font-size:0.7rem;
+        height: 4rem;
+        line-height: 4rem;
+        font-size:1.5rem;
     }
 
     #lpage-home{
         margin-left:6vw;
-        line-height: 2.5rem;
+        line-height: 4rem;
     }#lpage-about,#lpage-ht{
         margin-right:6vw;
-        line-height: 2.5rem;
+        line-height: 4rem;
     }
 }

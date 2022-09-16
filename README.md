@@ -1,8 +1,8 @@
 # LIVE AT
 
-Open [https://animated-figolla-356b7f.netlify.app/](Live At)
+Open [Live At](https://animated-figolla-356b7f.netlify.app/)
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
