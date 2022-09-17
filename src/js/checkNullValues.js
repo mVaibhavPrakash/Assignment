@@ -1,13 +1,12 @@
-const checkNullValues = (nextRow, map) => {
-  for (let i = 0; i < map[nextRow].length; i++) {
-    console.log(map);
-    if (map[nextRow][i] === undefined) {
-      map[nextRow][i] = (
-        <span className="coin-span coin-x" key={`${nextRow}${i}`}>
-          {' '}
-        </span>
-      );
-    }
+//Function for updating array empty values with <span></span>
+
+const checkNullValues = (nextRow, map, startIndexOfNullValues, col) => {
+  for (let i = startIndexOfNullValues; i < col; i++) {
+    map[nextRow][i] = (
+      <span className="coin-span coin-x" key={`${nextRow}${i}`}>
+        {' '}
+      </span>
+    );
   }
 };
 
