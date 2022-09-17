@@ -16,7 +16,7 @@ const Submit = (e, arg1, arg2) => {
 
     if (OptionValue === LastSelectedCoin.lastSelectedCoin) {
       noChange(map, OptionValue, nextRow, col);
-    } else if (OptionValue === 'H' || 'T') {
+    } else {
       [nextRow, col] = change(map, OptionValue, nextRow, col);
     }
 
