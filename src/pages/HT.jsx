@@ -17,7 +17,9 @@ const HT = () => {
             <Options OptionValue={OptionValue} setOptionValue={setOptionValue}/>
             <p className='mssg'>{Mssg}</p>
             <button className='ht-submit' onClick={(e)=>{Submit(e,[OptionValue,LastSelectedCoin],[setOptionValue,setLastSelectedCoin,setAns,setMssg])}}>Submit</button>
-            <div className='result'>{Ans}</div>
+            <div className='result'>{
+              Ans
+            }</div>
         </div>
     </Fragment>
   )

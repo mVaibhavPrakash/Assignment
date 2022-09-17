@@ -1,6 +1,5 @@
 import change from './change';
 import noChange from './noChange';
-import result from './result';
 
 const Submit = (e, arg1, arg2) => {
   e.preventDefault();
@@ -11,8 +10,7 @@ const Submit = (e, arg1, arg2) => {
     //Resetting Validation Massg
     setMssg('');
 
-    const map =
-      LastSelectedCoin.Result === null ? new Map() : LastSelectedCoin.Result;
+    const map = LastSelectedCoin.Result === null ? [] : LastSelectedCoin.Result;
     let nextRow = LastSelectedCoin.index.rowNum + 1;
     let col = LastSelectedCoin.index.colNum;
 
@@ -27,9 +25,16 @@ const Submit = (e, arg1, arg2) => {
       lastSelectedCoin: OptionValue,
       index: { rowNum: nextRow, colNum: col },
     };
+    const answer = map.map((val, i) => {
+      return (
+        <p className="coin-p" key={i}>
+          {val}
+        </p>
+      );
+    });
     setLastSelectedCoin(obj);
-    result(setAns, map);
-
+    setAns(answer);
+    console.log(answer);
     // Setting the OptionValue again to default
     setOptionValue('none');
   } else {
